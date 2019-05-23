@@ -154,7 +154,9 @@ contract SupplyChain {
   }
 
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
-  function harvestItem(uint _upc, address _originFarmerID, string memory _originFarmName, string memory _originFarmInformation, string memory _originFarmLatitude, string memory _originFarmLongitude, string memory _productNotes) onlyOwner public
+  function harvestItem(uint _upc, address _originFarmerID, string memory _originFarmName, string memory _originFarmInformation, string memory _originFarmLatitude, string memory _originFarmLongitude, string memory _productNotes)
+  //verifyCaller(_originFarmerID) //VerifyCaller 
+  public
   {
     // Add the new item as part of Harvest
     items[_upc] = Item({ upc:_upc,sku:sku, originFarmerID:_originFarmerID, originFarmName:_originFarmName, originFarmInformation:_originFarmInformation, originFarmLatitude:_originFarmLatitude, originFarmLongitude:_originFarmLongitude, productNotes:_productNotes,productPrice:0, ownerID:msg.sender, itemState:State.Harvested,productID: 0, distributorID:address(uint160(0)), retailerID:address(uint160(0)), consumerID:address(uint160(0)) });
@@ -239,7 +241,7 @@ contract SupplyChain {
 
   // Define a function 'shipItem' that allows the distributor to mark an item 'Shipped'
   // Use the above modifers to check if the item is sold
-  function shipItem(uint _upc) sold(_upc) verifyCaller(items[_upc].distributorID) public
+  function shipItem(uint _upc) sold(_upc) verifyCaller(items[_upc].originFarmerID) public
     // Call modifier to check if upc has passed previous supply chain stage
 
     // Call modifier to verify caller of this function
@@ -256,7 +258,7 @@ contract SupplyChain {
 
   // Define a function 'receiveItem' that allows the retailer to mark an item 'Received'
   // Use the above modifiers to check if the item is shipped
-  function receiveItem(uint _upc) verifyCaller(items[_upc].retailerID) shipped(_upc)  public
+  function receiveItem(uint _upc) verifyCaller(items[_upc].originFarmerID) shipped(_upc)  public
     // Call modifier to check if upc has passed previous supply chain stage
 
     // Access Control List enforced by calling Smart Contract / DApp
