@@ -301,7 +301,6 @@ contract('SupplyChain', function(accounts) {
        // let itemFetch1 = await instance.fetchItemBufferOne(1);
 
         // Verify the result set:
-        console.log("********* "+ resultBufferOne[4])
          assert.equal(resultBufferOne[4], "John Doe", "owner equals the harvester");
 
     })
