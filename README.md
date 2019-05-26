@@ -13,7 +13,7 @@ Contract
 Address: 0xe01b4eb0fe1a54cb29fb738e9facb2215e71bac36066b2ed349d79ef22ceb9cd
 
 Versions
-Solidity: v4.1.14;
- Truffle: v5.0.17
+Solidity:v0.4.24;
+ Truffle: v4.1.14
   Web3.js: v1.0.0-beta.37
 
