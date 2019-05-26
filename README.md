@@ -3,16 +3,18 @@
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
 Libraries
-We use the Roles library 
+I use the Roles Role  library for 
+Role library for managing addresses assigned to a Role.
+ownable library for Defining  an owner for all the contracts.
 
 IPFS
 We will not be using IPFS 
 
 Contract
-Address: 0x3E46289145da23Ef499e6372b6a96F6EF947e525
+Address: 0x5461a50e94fb2ec264e1d45ce57e396027a83d95
 
 Versions
-Solidity: v0.5.0;
- Truffle: v4.1.14
+Solidity: v4.1.14;
+ Truffle: v5.0.17
   Web3.js: v1.0.0-beta.37
 

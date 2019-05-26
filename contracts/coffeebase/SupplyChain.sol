@@ -278,7 +278,10 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole , RetailerRole, Con
 
   // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
   // Use the above modifiers to check if the item is received
-  function purchaseItem(uint _upc) verifyCaller(items[_upc].consumerID) received(_upc)public
+  function purchaseItem(uint _upc) public payable 
+      forSale(_upc)
+      paidEnough(items[_upc].productPrice)
+      checkValue(_upc)
     // Call modifier to check if upc has passed previous supply chain stage
 
     // Access Control List enforced by calling Smart Contract / DApp
@@ -287,6 +290,8 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole , RetailerRole, Con
     items[_upc].ownerID = msg.sender;
     items[_upc].retailerID = msg.sender;
     items[_upc].itemState = State.Purchased;
+
+    items[_upc].retailerID.transfer(items[_upc].productPrice);
 
     // Emit the appropriate event
     emit Purchased(_upc);

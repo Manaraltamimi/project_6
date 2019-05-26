@@ -276,7 +276,7 @@ contract('SupplyChain', function(accounts) {
 
 
         // Mark an item as Sold by calling function buyItem()
-        await supplyChain.purchaseItem(upc)
+        await supplyChain.purchaseItem(upc,{from: retailerID} )
 
 
 
