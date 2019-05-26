@@ -284,7 +284,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1558,
+                          "referencedDeclaration": 1550,
                           "src": "620:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -392,7 +392,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1558,
+                              "referencedDeclaration": 1550,
                               "src": "775:3:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -458,10 +458,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1561,
-                        1562
+                        1553,
+                        1554
                       ],
-                      "referencedDeclaration": 1561,
+                      "referencedDeclaration": 1553,
                       "src": "756:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -820,7 +820,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1558,
+                          "referencedDeclaration": 1550,
                           "src": "1238:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1490,7 +1490,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1558,
+                          "referencedDeclaration": 1550,
                           "src": "620:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1598,7 +1598,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1558,
+                              "referencedDeclaration": 1550,
                               "src": "775:3:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1664,10 +1664,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1561,
-                        1562
+                        1553,
+                        1554
                       ],
-                      "referencedDeclaration": 1561,
+                      "referencedDeclaration": 1553,
                       "src": "756:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2026,7 +2026,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1558,
+                          "referencedDeclaration": 1550,
                           "src": "1238:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2527,10 +2527,10 @@
         }
       },
       "links": {},
-      "address": "0x5ca949708860a0cbeff7e9e2f0566f8458ee63dc",
-      "transactionHash": "0x13bc948fb4a55113e98d61c5af752297653d1a4200e72b9f0a34944b8c43c192"
+      "address": "0xb1af2a04c81d33d3f4b4c5ee502600168452faf0",
+      "transactionHash": "0xc97e80fdbc72501c12b3c0d4dfbc8866d56832b304401606be7bd51cc74cf84c"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2019-05-23T09:28:57.369Z"
+  "updatedAt": "2019-05-23T20:01:25.693Z"
 }

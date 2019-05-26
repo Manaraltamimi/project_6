@@ -220,7 +220,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole , RetailerRole, Con
   // Define a function 'buyItem' that allows the disributor to mark an item 'Sold'
   // Use the above defined modifiers to check if the item is available for sale, if the buyer has paid enough,
   // and any excess ether sent is refunded back to the buyer
-  function buyItem(uint _upc) forSale(_upc) paidEnough(items[_upc].productPrice) checkValue(_upc) onlyDistributor() public payable
+  function buyItem(uint _upc) forSale(_upc) paidEnough(items[_upc].productPrice) checkValue(_upc)  public payable
     // Call modifier to check if upc has passed previous supply chain stage
 
     // Call modifer to check if buyer has paid enough
@@ -244,7 +244,7 @@ contract SupplyChain is Ownable, FarmerRole, DistributorRole , RetailerRole, Con
 
   // Define a function 'shipItem' that allows the distributor to mark an item 'Shipped'
   // Use the above modifers to check if the item is sold
-  function shipItem(uint _upc) sold(_upc) verifyCaller(items[_upc].distributorID) public
+  function shipItem(uint _upc) sold(_upc) public
     // Call modifier to check if upc has passed previous supply chain stage
 
     // Call modifier to verify caller of this function
