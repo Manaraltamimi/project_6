@@ -13,6 +13,6 @@ Address: 0x3E46289145da23Ef499e6372b6a96F6EF947e525
 
 Versions
 Solidity: v0.5.0;
- Truffle: v5.0.17
+ Truffle: v4.1.14
   Web3.js: v1.0.0-beta.37
 
