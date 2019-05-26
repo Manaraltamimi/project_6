@@ -11,7 +11,7 @@ IPFS
 We will not be using IPFS 
 
 Contract
-Address: 0x5461a50e94fb2ec264e1d45ce57e396027a83d95
+Address: 0xe01b4eb0fe1a54cb29fb738e9facb2215e71bac36066b2ed349d79ef22ceb9cd
 
 Versions
 Solidity: v4.1.14;
